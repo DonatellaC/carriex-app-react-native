@@ -1,0 +1,58 @@
+export const lists = [
+  {
+    header: "Parcel List 05/04/2023",
+    carriers: 4,
+    pickUpDate: "today",
+    date: "05/04/2023",
+    items: 14,
+  },
+  {
+    header: "Parcel List 04/04/2023",
+    carriers: 5,
+    pickUpDate: "on 11/11/2022",
+    date: "04/04/2023",
+    items: 14,
+  },
+  {
+    header: "Parcel List 03/04/2023",
+    carriers: 5,
+    pickUpDate: "on 29/10/2022",
+    date: "03/04/2023",
+    items: 14,
+  },
+  {
+    header: "Parcel List 31/03/2023",
+    carriers: 5,
+    pickUpDate: "on 28/10/2022",
+    date: "31/03/2023",
+    items: 14,
+  },
+  {
+    header: "Parcel List 29/03/2023",
+    carriers: 5,
+    pickUpDate: "on 27/10/2022",
+    date: "29/03/2023",
+    items: 14,
+  },
+  {
+    header: "Parcel List 28/03/2023",
+    carriers: 5,
+    pickUpDate: "on 26/10/2022",
+    date: "28/03/2023",
+    items: 14,
+  },
+  {
+    header: "Parcel List 27/03/2023",
+    carriers: 5,
+    pickUpDate: "on 25/10/2022",
+    date: "27/03/2023",
+    items: 14,
+  },
+  {
+    header: "Parcel List 26/03/2023",
+    carriers: 5,
+    pickUpDate: "on 24/10/2022",
+    date: "26/03/2023",
+    items: 14,
+  },
+];
