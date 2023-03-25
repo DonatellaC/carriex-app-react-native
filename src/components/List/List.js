@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 
 const List = ({
@@ -10,12 +9,11 @@ const List = ({
   items,
   pickUpDate,
   hasBorderBottom,
+  onPress,
 }) => {
-  const { navigate } = useNavigation();
-
   return (
     <View style={[styles.wrapper, hasBorderBottom && styles.borderBottom]}>
-      <TouchableOpacity onPress={() => navigate("Parcel Details")}>
+      <TouchableOpacity onPress={onPress}>
         <Text style={styles.header}>{header}</Text>
         <View style={styles.info}>
           <Text style={styles.infoText}>
