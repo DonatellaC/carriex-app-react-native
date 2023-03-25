@@ -5,7 +5,7 @@ export default function ParcelList() {
   return (
     <View>
       <Text>Parcel List</Text>
-      <Button text="add" />
+      <Button shape="round" text="+" />
     </View>
   );
 }
