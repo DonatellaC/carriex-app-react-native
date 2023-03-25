@@ -12,10 +12,10 @@ const List = ({ header, carriers, date, items, pickUpDate }) => {
       <TouchableOpacity onPress={() => navigate("Parcel Details")}>
         <Text style={styles.header}>{header}</Text>
         <View style={styles.info}>
-          <Text>
+          <Text style={styles.infoText}>
             {carriers} carriers will pick up the parcel {pickUpDate}
           </Text>
-          <Text>{date}</Text>
+          <Text style={styles.infoTextDate}>{date}</Text>
         </View>
         <View style={styles.info}>
           <Text>{items} items</Text>

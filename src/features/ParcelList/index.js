@@ -2,11 +2,13 @@ import { View, Text } from "react-native";
 import { Button } from "../../components/Button/Button";
 import List from "../../components/List/List";
 import { lists } from "../../utilities/lists";
+import stylesFn from "./styles";
 
 export default function ParcelList() {
+  const styles = stylesFn();
   return (
-    <View>
-      <Text>Parcel Lists</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Parcel Lists</Text>
       {lists.map((list, index) => (
         <List
           key={index}
