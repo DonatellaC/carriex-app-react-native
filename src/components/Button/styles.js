@@ -22,6 +22,11 @@ const stylesFn = ({ shape }) => {
       shadowRadius: 2,
       elevation: 2,
       borderWidth: 0,
+      position: "fixed",
+      bottom: 0,
+      left: "50%",
+      transform: [{ translateX: "-50%" }],
+      marginBottom: 20,
     },
     btnText: {
       color: "#FFFFFF",

@@ -2,10 +2,9 @@ import { View, Text } from "react-native";
 import { Button } from "../../components/Button/Button";
 import List from "../../components/List/List";
 import { lists } from "../../utilities/lists";
-import stylesFn from "./styles";
+import styles from "./styles";
 
 export default function ParcelList() {
-  const styles = stylesFn();
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Parcel Lists</Text>
@@ -17,6 +16,7 @@ export default function ParcelList() {
           date={list.date}
           items={list.items}
           pickUpDate={list.pickUpDate}
+          hasBorderBottom={index !== lists.length - 1}
         />
       ))}
       <Button shape="round" text="+" />
