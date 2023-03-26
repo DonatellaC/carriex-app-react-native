@@ -21,12 +21,29 @@ const styles = StyleSheet.create({
   },
   carrierWrapper: {
     display: "flex",
-    flexDirection: "column",
-    fontFamily: "Inter",
+    flexDirection: "row",
+    alignItems: "center",
     borderBottomWidth: 0,
     paddingBottom: 10,
     paddingLeft: 14,
     paddingRight: 14,
+  },
+  iconsWrapper: {
+    display: "flex",
+    justifyContent: "center",
+    marginRight: 8,
+  },
+  iconWrapper: {
+    position: "absolute",
+  },
+  iconRectangle: {
+    display: "flex",
+  },
+  iconCargo: {
+    display: "flex",
+  },
+  containerIdName: {
+    display: "flex",
   },
 });
 export default styles;
