@@ -15,10 +15,9 @@ export default function ParcelList() {
         <List
           key={index}
           header={list.header}
-          carriers={list.carriers.count}
+          numbersOfCarriers={`${list.carriers.count} carriers will pick up the parcel ${list.pickUpDate}`}
           date={list.date}
-          items={list.items}
-          pickUpDate={list.pickUpDate}
+          itemsText={`${list.items} items`}
           hasBorderBottom={index !== lists.length - 1}
           onPress={() => {
             navigation.navigate("Parcel Details", { list: list });

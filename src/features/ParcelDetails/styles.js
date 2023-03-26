@@ -28,22 +28,5 @@ const styles = StyleSheet.create({
     paddingLeft: 14,
     paddingRight: 14,
   },
-  iconsWrapper: {
-    display: "flex",
-    justifyContent: "center",
-    marginRight: 8,
-  },
-  iconWrapper: {
-    position: "absolute",
-  },
-  iconRectangle: {
-    display: "flex",
-  },
-  iconCargo: {
-    display: "flex",
-  },
-  containerIdName: {
-    display: "flex",
-  },
 });
 export default styles;

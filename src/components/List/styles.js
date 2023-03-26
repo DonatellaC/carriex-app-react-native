@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     color: "rgba(58, 53, 65, 0.87)",
     paddingTop: 16,
   },
-  info: {
+  infoRight: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -44,6 +44,44 @@ const styles = StyleSheet.create({
   },
   items: {
     fontSize: 10,
+  },
+  idNameWrapper: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 4,
+  },
+  idText: {
+    fontSize: 12,
+    lineHeight: 15,
+    color: "rgba(58, 53, 65, 0.87)",
+    marginRight: 4,
+  },
+  carrierId: {
+    fontWeight: "500",
+  },
+  carrierName: {
+    display: "flex",
+    fontWeight: "400",
+    marginRight: 4,
+  },
+  deliveryStatus: {
+    display: "flex",
+    color: "rgb(223, 0, 0)",
+    fontSize: 10,
+    fontWeight: "500",
+    lineHeight: 12,
+    textTransform: "uppercase",
+  },
+  currierNameStatusWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  detailsContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
   },
 });
 
