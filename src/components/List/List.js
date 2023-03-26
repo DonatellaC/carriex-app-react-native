@@ -22,7 +22,7 @@ const List = ({
           <Text style={styles.infoTextDate}>{date}</Text>
         </View>
         <View style={styles.info}>
-          <Text>{items} items</Text>
+          <Text style={styles.items}>{items} items</Text>
         </View>
       </TouchableOpacity>
     </View>

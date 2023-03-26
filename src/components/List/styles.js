@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
     lineHeight: 12,
     textAlign: "right",
   },
+  items: {
+    fontSize: 10,
+  },
 });
 
 export default styles;
