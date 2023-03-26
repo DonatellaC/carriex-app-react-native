@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   },
   input: {
     marginBottom: 15,
+    color: "rgba(58, 53, 65, 0.87)",
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
@@ -31,6 +32,15 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginLeft: 22,
     marginRight: 22,
+  },
+  label: {
+    backgroundColor: "#fff",
+    position: "absolute",
+    color: "rgba(58, 53, 65, 0.87)",
+    top: -14,
+    left: 35,
+    padding: 5,
+    fontSize: 12,
   },
 });
 

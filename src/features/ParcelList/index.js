@@ -45,6 +45,9 @@ export default function ParcelList({}) {
           primaryLabel="ID"
           secondaryLabel="Carrier ID"
           onClose={() => setIsModalOpen(false)}
+          onAdd={(data) => {
+            console.log(data);
+          }}
         />
       )}
     </View>

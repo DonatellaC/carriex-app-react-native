@@ -3,7 +3,14 @@ import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { Button } from "../Button/Button";
 import styles from "./styles";
 
-const Modal = ({ title, primaryLabel, secondaryLabel, textButton, onAdd }) => {
+const Modal = ({
+  title,
+  primaryLabel,
+  secondaryLabel,
+  textButton,
+  onAdd,
+  onClose,
+}) => {
   const [primaryInputValue, setPrimaryInputValue] = useState("");
   const [secondaryInputValue, setSecondaryInputValue] = useState("");
 
@@ -23,6 +30,7 @@ const Modal = ({ title, primaryLabel, secondaryLabel, textButton, onAdd }) => {
       });
       setPrimaryInputValue("");
       setSecondaryInputValue("");
+      onClose();
     }
   };
 
@@ -30,17 +38,21 @@ const Modal = ({ title, primaryLabel, secondaryLabel, textButton, onAdd }) => {
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
       <View style={styles.inputContainer}>
+        <Text style={styles.label}>{primaryLabel}</Text>
         <TextInput
           style={styles.input}
           value={primaryInputValue}
           onChangeText={handlePrimaryInputChange}
-          placeholder={`${primaryLabel}`}
+          placeholder={`Please type an ${primaryLabel}`}
         />
+      </View>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>{secondaryLabel}</Text>
         <TextInput
           style={styles.input}
           value={secondaryInputValue}
           onChangeText={handleSecondaryInputChange}
-          placeholder={`${secondaryLabel}`}
+          placeholder={`Please type a ${secondaryLabel}`}
         />
       </View>
       <TouchableOpacity>
