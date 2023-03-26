@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   secondIcon: {
     position: "absolute",
-    bottom: 13,
+    bottom: 17,
     left: 13,
   },
 });

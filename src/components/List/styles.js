@@ -9,6 +9,8 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     paddingLeft: 14,
     paddingRight: 14,
+    fontFamily: "Inter",
+    fontStyle: "normal",
   },
   borderBottom: {
     borderBottomWidth: 1,
@@ -58,11 +60,8 @@ const styles = StyleSheet.create({
   },
   carrierId: {
     fontWeight: "500",
-  },
-  carrierName: {
-    display: "flex",
-    fontWeight: "400",
-    marginRight: 4,
+    fontSize: 14,
+    lineHeight: 17,
   },
   deliveryStatus: {
     display: "flex",
@@ -71,17 +70,37 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     lineHeight: 12,
     textTransform: "uppercase",
+    textAlign: "right",
   },
   currierNameStatusWrapper: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    alignItems: "baseline",
+  },
+  carrierName: {
+    display: "flex",
+    fontWeight: "400",
+    marginRight: 4,
+    flex: 1,
+    fontweight: 400,
+    fontSize: 10,
+    lineHeight: 12,
   },
   detailsContainer: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+  },
+  icons: {
+    display: "flex",
+    marginRight: 13,
+    width: 50,
+  },
+  numbersOfItems: {
+    fontweight: 400,
+    fontSize: 10,
+    lineHeight: 12,
   },
 });
 

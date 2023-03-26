@@ -3,7 +3,6 @@ import { View, Text } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import List from "../../components/List/List";
 import styles from "./styles";
-import Icons from "../../components/Icons/Icons";
 
 const ParcelDetails = () => {
   const { params } = useRoute();

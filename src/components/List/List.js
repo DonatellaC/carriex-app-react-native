@@ -24,7 +24,7 @@ const List = ({
         <Text style={styles.header}>{header}</Text>
 
         <View style={styles.detailsContainer}>
-          <View>{icon && <Icons />}</View>
+          <View style={styles.icons}>{icon && <Icons />}</View>
           <View style={styles.carrierName}>
             {carrierId && (
               <Text style={[styles.idText, styles.carrierId]}>{carrierId}</Text>
@@ -43,7 +43,9 @@ const List = ({
                 )}
               </View>
             </View>
-            {numbersOfItems && <Text>{numbersOfItems}</Text>}
+            {numbersOfItems && (
+              <Text style={styles.numbersOfItems}>{numbersOfItems}</Text>
+            )}
           </View>
         </View>
 
