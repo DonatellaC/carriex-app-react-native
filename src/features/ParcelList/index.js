@@ -15,13 +15,12 @@ export default function ParcelList() {
         <List
           key={index}
           header={list.header}
-          carriers={list.carriers}
+          carriers={list.carriers.count}
           date={list.date}
           items={list.items}
           pickUpDate={list.pickUpDate}
           hasBorderBottom={index !== lists.length - 1}
           onPress={() => {
-            console.log(list);
             navigation.navigate("Parcel Details", { list: list });
           }}
         />

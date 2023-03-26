@@ -11,9 +11,22 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 16,
   },
-  text: {
-    fontSize: 18,
-    marginBottom: 8,
+  items: {
+    fontFamily: "Inter",
+    fontStyle: "normal",
+    fontWeight: 400,
+    fontSize: 10,
+    lineHeight: 12,
+    color: "rgba(58, 53, 65, 0.87)",
+  },
+  carrierWrapper: {
+    display: "flex",
+    flexDirection: "column",
+    fontFamily: "Inter",
+    borderBottomWidth: 0,
+    paddingBottom: 10,
+    paddingLeft: 14,
+    paddingRight: 14,
   },
 });
 export default styles;
