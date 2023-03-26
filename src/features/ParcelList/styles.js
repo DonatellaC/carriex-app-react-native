@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
     marginBottom: 40,
     backgroundColor: "#fff",
+    flex: 1,
   },
   title: {
     fontFamily: "Inter",
@@ -19,6 +20,14 @@ const styles = StyleSheet.create({
     lineHeight: 29,
     paddingBottom: 8,
     paddingLeft: 14,
+  },
+  overlay: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+  },
+  modalOpenContainer: {
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
 });
 
