@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontFamily: "Inter",
+    // fontFamily: "Inter",
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: 24,
@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     paddingBottom: 20,
+  },
+  modalOpenContainer: {
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
   modalOpenContainer: {
     backgroundColor: "rgba(0, 0, 0, 0.5)",

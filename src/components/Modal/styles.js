@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     position: "absolute",
-    width: 360,
+    width: 375,
     height: 354,
     left: 0,
     backgroundColor: "#FFFFFF",
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     lineHeight: 24,
     color: "rgba(58, 53, 65, 0.87)",
-    fontFamily: "Inter",
+    // fontFamily: "Inter",
     fontStyle: "normal",
     marginBottom: 30,
   },
@@ -34,13 +34,19 @@ const styles = StyleSheet.create({
     marginRight: 22,
   },
   label: {
-    backgroundColor: "#fff",
+    backgroundColor: "#FFFFFF",
     position: "absolute",
     color: "rgba(58, 53, 65, 0.87)",
-    top: -14,
+    top: -12,
     left: 35,
     padding: 5,
     fontSize: 12,
+    zIndex: 1,
+  },
+  button: {
+    paddingLeft: 20,
+    paddingRight: 21,
+    marginTop: 40,
   },
 });
 

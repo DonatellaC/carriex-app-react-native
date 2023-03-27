@@ -9,13 +9,15 @@ const stylesFn = ({ shape }) => {
 
   return StyleSheet.create({
     btnBody: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       backgroundColor: "#DF0000",
       padding: 0,
       width: buttonWidth,
       borderRadius: borderRadius,
       height: buttonHeight,
-      justifyContent: "center",
-      alignItems: "center",
+      width: "100%",
       shadowColor: "rgba(58, 53, 65, 0.42)",
       shadowOffset: { width: 0, height: 4 },
       shadowOpacity: 1,
@@ -24,19 +26,19 @@ const stylesFn = ({ shape }) => {
       borderWidth: 0,
       position: "fixed",
       bottom: 0,
-      left: "50%",
-      transform: [{ translateX: "-50%" }],
+      elevation: 8,
       marginBottom: 20,
     },
     btnText: {
       color: "#FFFFFF",
       fontSize: 14,
       textAlign: "center",
-      fontFamily: "Inter",
+      // fontFamily: "Inter",
       fontWeight: 500,
       lineHeight: 24,
       letterSpacing: 0.4,
       textTransform: "uppercase",
+      alignItems: "center",
     },
   });
 };

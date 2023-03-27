@@ -56,7 +56,9 @@ const Modal = ({
         />
       </View>
       <TouchableOpacity>
-        <Button text={textButton} onPress={handleSubmit} />
+        <View style={styles.button}>
+          <Button text={textButton} onPress={handleSubmit} />
+        </View>
       </TouchableOpacity>
     </View>
   );

@@ -4,12 +4,12 @@ const styles = StyleSheet.create({
   wrapper: {
     display: "flex",
     flexDirection: "column",
-    fontFamily: "Inter",
+    // fontFamily: "Inter",
     borderBottomWidth: 0,
     paddingBottom: 10,
     paddingLeft: 14,
     paddingRight: 14,
-    fontFamily: "Inter",
+    // fontFamily: "Inter",
     fontStyle: "normal",
   },
   borderBottom: {
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     marginRight: 4,
     flex: 1,
-    fontweight: 400,
+    fontWeight: 400,
     fontSize: 10,
     lineHeight: 12,
   },
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     width: 50,
   },
   numbersOfItems: {
-    fontweight: 400,
+    fontWeight: 400,
     fontSize: 10,
     lineHeight: 12,
   },

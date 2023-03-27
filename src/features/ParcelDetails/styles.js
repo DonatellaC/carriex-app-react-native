@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   items: {
-    fontFamily: "Inter",
+    // fontFamily: "Inter",
     fontStyle: "normal",
     fontWeight: 400,
     fontSize: 10,
