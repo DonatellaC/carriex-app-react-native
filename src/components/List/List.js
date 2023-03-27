@@ -1,7 +1,5 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import CargoTruck from "../../utilities/cargoTruck";
-import Rectangle from "../../utilities/rectangle";
 import Icons from "../Icons/Icons";
 import styles from "./styles";
 
@@ -37,7 +35,15 @@ const List = ({
               )}
               <View style={styles.infoRight}>
                 {deliveryStatus && (
-                  <Text style={[styles.idText, styles.deliveryStatus]}>
+                  <Text
+                    style={[
+                      styles.idText,
+                      styles.deliveryStatus,
+                      deliveryStatus === "Delivered"
+                        ? styles.deliveredStatus
+                        : styles.deliveryStatus,
+                    ]}
+                  >
                     {deliveryStatus}
                   </Text>
                 )}
@@ -67,3 +73,13 @@ const List = ({
 };
 
 export default List;
+
+//  <Text
+//    style={[
+//      styles.idText,
+//      styles.deliveryStatus,
+//      deliveryStatus === "Delivered" && { color: "rgba(58, 53, 65, 0.38)" },
+//    ]}
+//  >
+//    {deliveryStatus}
+//  </Text>;

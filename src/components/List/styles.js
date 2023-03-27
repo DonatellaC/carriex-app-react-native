@@ -72,6 +72,9 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
     textAlign: "right",
   },
+  deliveredStatus: {
+    color: "rgba(58, 53, 65, 0.38)",
+  },
   currierNameStatusWrapper: {
     display: "flex",
     flexDirection: "row",
