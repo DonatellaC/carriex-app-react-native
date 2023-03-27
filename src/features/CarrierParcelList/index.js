@@ -25,17 +25,18 @@ export default function CarrierParcelList() {
   return (
     <View style={styles.container}>
       <Text> {carrierId} Parcel List</Text>
-      {items.map((item) => (
+      {items.map((item, index) => (
         <>
           <TouchableOpacity>
             <List
-              key={item.id.$oid}
+              key={index}
               carrierId={
                 <Text style={styles.parcelItemId}>{item.id.$oid}</Text>
               }
               carrierName={
-                item.weight && <Text>Weight: {weightInKilos(item.weight)}</Text>
+                item.weight && <Text>{weightInKilos(item.weight)}</Text>
               }
+              hasBorderBottom={index !== items?.length - 1}
             />
           </TouchableOpacity>
         </>
