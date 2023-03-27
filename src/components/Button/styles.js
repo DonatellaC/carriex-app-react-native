@@ -4,7 +4,7 @@ const width = Dimensions.get("window").width;
 
 const stylesFn = ({ shape }) => {
   const borderRadius = shape === "round" ? 24 : 5;
-  const buttonWidth = shape === "round" ? 48 : width / 1.3;
+  const buttonWidth = shape === "round" ? 48 : "100%";
   const buttonHeight = shape === "round" ? 48 : 46;
 
   return StyleSheet.create({
@@ -17,7 +17,6 @@ const stylesFn = ({ shape }) => {
       width: buttonWidth,
       borderRadius: borderRadius,
       height: buttonHeight,
-      width: "100%",
       shadowColor: "rgba(58, 53, 65, 0.42)",
       shadowOffset: { width: 0, height: 4 },
       shadowOpacity: 1,

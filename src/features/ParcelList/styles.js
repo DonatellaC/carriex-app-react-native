@@ -29,8 +29,12 @@ const styles = StyleSheet.create({
   modalOpenContainer: {
     backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
-  modalOpenContainer: {
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  roundButton: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: 10,
   },
 });
 

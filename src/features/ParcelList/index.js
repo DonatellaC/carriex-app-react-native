@@ -33,7 +33,9 @@ export default function ParcelList({}) {
         ))}
         {!isModalOpen && (
           <TouchableOpacity>
-            <Button shape="round" text="+" onPress={handleModalOpen} />
+            <View style={styles.roundButton}>
+              <Button shape="round" text="+" onPress={handleModalOpen} />
+            </View>
           </TouchableOpacity>
         )}
       </View>
