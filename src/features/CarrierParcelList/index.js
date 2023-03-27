@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { useRoute } from "@react-navigation/native";
+import List from "../../components/List/List";
 import { Button } from "../../components/Button/Button";
 import styles from "./styles";
 
@@ -22,17 +23,25 @@ export default function CarrierParcelList() {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text> {carrierId} Parcel List</Text>
-      {items.map((item, index) => (
-        <Text key={item.id.$oid}>
-          <Text>{item.type}</Text>
-          <Text style={styles.itemId}>{item.id.$oid}</Text>
-          {item.weight && <Text>Weight: {weightInKilos(item.weight)}</Text>}
-        </Text>
+      {items.map((item) => (
+        <>
+          <TouchableOpacity>
+            <List
+              key={item.id.$oid}
+              carrierId={
+                <Text style={styles.parcelItemId}>{item.id.$oid}</Text>
+              }
+              carrierName={
+                item.weight && <Text>Weight: {weightInKilos(item.weight)}</Text>
+              }
+            />
+          </TouchableOpacity>
+        </>
       ))}
       <TouchableOpacity>
-        <View>
+        <View style={styles.button}>
           <Button text="Delivery" onPress={handleSubmit} />
         </View>
       </TouchableOpacity>

@@ -73,13 +73,3 @@ const List = ({
 };
 
 export default List;
-
-//  <Text
-//    style={[
-//      styles.idText,
-//      styles.deliveryStatus,
-//      deliveryStatus === "Delivered" && { color: "rgba(58, 53, 65, 0.38)" },
-//    ]}
-//  >
-//    {deliveryStatus}
-//  </Text>;
