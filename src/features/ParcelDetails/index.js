@@ -2,6 +2,8 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { useRoute, useNavigation } from "@react-navigation/native";
 import List from "../../components/List/List";
+import Rectangle from "../../utilities/rectangle";
+import CargoTruck from "../../utilities/cargoTruck";
 import styles from "./styles";
 
 const ParcelDetails = () => {
@@ -24,6 +26,8 @@ const ParcelDetails = () => {
               numbersOfItems={`${carrier.items.length} items to be picked up`}
               hasBorderBottom={index !== list?.carriers.list.length - 1}
               icon
+              firstIcon={<Rectangle />}
+              secondIcon={<CargoTruck />}
               onPress={() =>
                 navigation.navigate("Carrier Parcel List", {
                   carrierId: carrier.id,

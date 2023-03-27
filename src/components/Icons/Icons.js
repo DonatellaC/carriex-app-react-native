@@ -1,22 +1,15 @@
 import React from "react";
 import { View, TouchableOpacity } from "react-native";
-import CargoTruck from "../../utilities/cargoTruck";
-import Rectangle from "../../utilities/rectangle";
 import styles from "./styles";
 
-const Icons = () => {
+const Icons = ({ firstIcon, secondIcon }) => {
   return (
     <View>
       <TouchableOpacity>
         <View style={styles.container}>
           <View style={styles.iconsWrapper}>
-            <View style={styles.firstIcon}>
-              <Rectangle style={styles.iconRectangle} />
-            </View>
-
-            <View style={styles.secondIcon}>
-              <CargoTruck style={styles.iconCargo} />
-            </View>
+            <View style={styles.firstIcon}>{firstIcon}</View>
+            <View style={styles.secondIcon}>{secondIcon}</View>
           </View>
         </View>
       </TouchableOpacity>

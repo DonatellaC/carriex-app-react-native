@@ -15,6 +15,8 @@ const List = ({
   numbersOfItems,
   deliveryStatus,
   icon,
+  firstIcon,
+  secondIcon,
 }) => {
   return (
     <View style={[styles.wrapper, hasBorderBottom && styles.borderBottom]}>
@@ -22,7 +24,9 @@ const List = ({
         <Text style={styles.header}>{header}</Text>
 
         <View style={styles.detailsContainer}>
-          <View style={styles.icons}>{icon && <Icons />}</View>
+          <View style={styles.icons}>
+            {icon && <Icons firstIcon={firstIcon} secondIcon={secondIcon} />}
+          </View>
           <View style={styles.carrierName}>
             {carrierId && (
               <Text style={[styles.idText, styles.carrierId]}>{carrierId}</Text>
