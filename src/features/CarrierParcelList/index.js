@@ -2,6 +2,10 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import List from "../../components/List/List";
 import { Button } from "../../components/Button/Button";
+import SmartwatchIcon from "../../utilities/smartwatch";
+import PhoneIcon from "../../utilities/smartphone";
+import LaptopIcon from "../../utilities/laptop";
+import Rectangle from "../../utilities/rectangle";
 import styles from "./styles";
 
 export default function CarrierParcelList() {
@@ -22,9 +26,22 @@ export default function CarrierParcelList() {
     console.log("Open Delivery information Modal");
   };
 
+  const getItemIcon = (type) => {
+    switch (type) {
+      case "Smartwatch":
+        return <SmartwatchIcon />;
+      case "Phone":
+        return <PhoneIcon />;
+      case "PC":
+        return <LaptopIcon />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <View style={styles.container}>
-      <Text> {carrierId} Parcel List</Text>
+      <Text style={styles.title}>{carrierId} Parcel List</Text>
       {items.map((item, index) => (
         <>
           <TouchableOpacity>
@@ -37,6 +54,9 @@ export default function CarrierParcelList() {
                 item.weight && <Text>{weightInKilos(item.weight)}</Text>
               }
               hasBorderBottom={index !== items?.length - 1}
+              icon
+              firstIcon={<Rectangle />}
+              secondIcon={getItemIcon(item.type)}
             />
           </TouchableOpacity>
         </>
