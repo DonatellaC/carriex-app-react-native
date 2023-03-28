@@ -6,6 +6,7 @@ const stylesFn = ({ shape }) => {
   const borderRadius = shape === "round" ? 24 : 5;
   const buttonWidth = shape === "round" ? 48 : "100%";
   const buttonHeight = shape === "round" ? 48 : 46;
+  const buttonFontSize = shape === "round" ? 24 : 14;
 
   return StyleSheet.create({
     btnBody: {
@@ -30,7 +31,7 @@ const stylesFn = ({ shape }) => {
     },
     btnText: {
       color: "#FFFFFF",
-      fontSize: 14,
+      fontSize: buttonFontSize,
       textAlign: "center",
       // fontFamily: "Inter",
       fontWeight: 500,
