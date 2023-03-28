@@ -13,3 +13,21 @@ CarrieX is a mobile app built in React Native as part of MediaMarkt & Nuwe Hacka
 - React Native
 - React Navigation
 - Expo
+
+![Img](./images/parcel-list.jpeg)
+![Img](./images/button-parcel-list.jpeg)
+![Img](./images/add.jpeg)
+![Img](./images/parcel-details.jpeg)
+![Img](./images/carrier-parcel-list.jpeg)
+
+## To-do
+
+- Improve code
+
+- Add functionality
+
+- Complete screens
+
+- Fix style
+
+- Separate data in lists - utilies
